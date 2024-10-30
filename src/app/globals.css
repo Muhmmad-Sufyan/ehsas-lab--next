@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'TT Chocolates Trl';
+  src: url('/Bonuses\ and\ services.pdf') format('woff2'),
+       url('/fonts/TTChocolatesTrl-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Chocolates Trl';
+  src: url('/fonts/TTChocolatesTrl-Bold.woff2') format('woff2'),
+       url('/fonts/TTChocolatesTrl-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
