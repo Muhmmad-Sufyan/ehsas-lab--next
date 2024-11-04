@@ -94,13 +94,15 @@ This file contains the common styles of this theme.
   }
 }
 .dialog {
-   display: none; 
+   display: flex; 
     position: fixed;
     z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
     padding: 10px auto;
+    flex-direction: column;
+  align-items: center;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
     justify-content: center;
@@ -114,15 +116,16 @@ This file contains the common styles of this theme.
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
+  position: relative;
   background-color: white;
   
 }
 
 .close-btn {
-  /* position: absolute; */
+  top: -10px;
+  position: absolute;
   align-self: end;
-  font-size: 18px;
+  font-size: 40px;
   cursor: pointer;
   color: #ff4d4d; /* Red color for close button */
   transition: color 0.3s;
@@ -135,15 +138,26 @@ This file contains the common styles of this theme.
 
 
 .ap {
-  margin-top: 10px;
-  background: linear-gradient(90deg, #28a745, #218838); /* Gradient background */
+  margin-top: 15px;
+  background: linear-gradient(90deg, #28a745, #218838);
   color: white;
   border: none;
-  border-radius: 5px; /* Rounded button corners */
-  padding: 10px 20px; /* Button padding */
+  border-radius: 5px;
+  padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Button shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  animation: blink 1s infinite; /* Blinking animation */
+}
+
+/* Blinking animation */
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0.5; /* Half transparent */
+  }
 }
 
 button:hover {
