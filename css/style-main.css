@@ -88,12 +88,6 @@ This file contains the common styles of this theme.
   display: block;
 }
 
-@media screen and (max-width : 520px) {
-  .s32 {
-    width: 40%;
-    margin: 0px auto;
-  }
-}
 
 .dialog {
   display: flex;
@@ -116,7 +110,7 @@ This file contains the common styles of this theme.
   border-radius: 20px;
   padding: 40px;
   display: flex;
-  width: 30%;
+  width: 35%;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -159,7 +153,9 @@ This file contains the common styles of this theme.
   position: relative;
   z-index: 1;
   margin-top: 11px;
-  width: 10%;
+  max-width: 40%;
+  min-width: 10%;
+  width: 20%;
   height: 30px;
   text-align: center;
   background: linear-gradient(90deg, #28a745, #218838);
@@ -196,6 +192,26 @@ This file contains the common styles of this theme.
 
 /* Apply the vibrating animation to the element */
 
+@media screen and (max-width : 686px) {
+  .s32 {
+    width: 50%;
+    margin: 0px auto;
+  }
+  .dialog-content{
+    width: 90%;
+  }
+
+}
+@media screen and (max-width : 912px) {
+  .s32 {
+    width: 50%;
+    margin: 0px auto;
+  }
+  .dialog-content{
+    width: 80%;
+  }
+ 
+}
 
 
 .ap:hover {
